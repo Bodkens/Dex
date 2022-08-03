@@ -15,8 +15,8 @@ public class OrientationScript : MonoBehaviour
     void Start(){
         if(!allowVertical){
             Screen.autorotateToPortrait = false;
-            canvasHorizontal.SetActive(true);
             canvasVertical.SetActive(false);
+            canvasHorizontal.SetActive(true);
         }
         else{
             Screen.autorotateToPortrait = true;
@@ -25,14 +25,14 @@ public class OrientationScript : MonoBehaviour
         }
     }
     void FixedUpdate(){
-        
-        if(Screen.orientation == ScreenOrientation.LandscapeLeft || Screen.orientation == ScreenOrientation.LandscapeRight){
+        if(allowVertical){
+            if(Screen.orientation == ScreenOrientation.LandscapeLeft || Screen.orientation == ScreenOrientation.LandscapeRight){
             canvasHorizontal.SetActive(true);
             canvasVertical.SetActive(false);
-        }
-        else if(Screen.orientation == ScreenOrientation.Portrait || Screen.orientation == ScreenOrientation.PortraitUpsideDown){
-            canvasHorizontal.SetActive(false);
-            canvasVertical.SetActive(true);
+            } else if(Screen.orientation == ScreenOrientation.Portrait || Screen.orientation == ScreenOrientation.PortraitUpsideDown){
+                canvasHorizontal.SetActive(false);
+                canvasVertical.SetActive(true);
+            }
         }
     }
 
