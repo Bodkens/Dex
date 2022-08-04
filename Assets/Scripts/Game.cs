@@ -6,15 +6,15 @@ using UnityEngine;
 public class Game : MonoBehaviour
 {
 
-    public Color[] colorLibrary;
+    public static Color[] colorLibrary = {new Color(250f/255f, 246f/255f, 84f/255f), new Color(250f/255f, 84f/255f, 198f/255f), new Color(90f/255f, 250f/255f, 84f/255f), new Color(84f/255f, 190f/255f, 250f/255f), new Color(212f/255f, 51f/255f, 19f/255f)};
 
-    public Sprite[] shapeLibrary; 
+    public static Sprite[] shapeLibrary;
 
-    public Sprite[] timerLibrary;
+    public static Sprite[] timerLibrary;
 
     public List<Player> playersList;
 
-    public bool colorMode;
+    public static bool colorMode;
 
     public static int players = 2;
 
@@ -28,9 +28,19 @@ public class Game : MonoBehaviour
 
     }
     public virtual void RefreshAll(){
-
+        
     }
 
+    public void Start(){
+
+        shapeLibrary = Resources.LoadAll<Sprite>("Figures"); 
+        timerLibrary = Resources.LoadAll<Sprite>("Timers");
+        onStart();
+    }
+
+    public virtual void onStart(){
+
+    }
     public virtual void Win(string p){
 
     }

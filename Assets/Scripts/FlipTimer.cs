@@ -14,13 +14,13 @@ public class FlipTimer : Timer
 
     public override void onUpdate(){
         imageOfTimer.fillAmount = startTime / time;
-        if(instance.colorMode){
+        if(Game.colorMode){
             imageOfTimer.color = Color.white;
-            imageOfTimer.sprite = instance.timerLibrary[1];
+            imageOfTimer.sprite = Game.timerLibrary[1];
         }
         else{
-            imageOfTimer.color = new Color(255, 129, 0);
-            imageOfTimer.sprite = instance.timerLibrary[0]; 
+            imageOfTimer.color = new Color(0, 255f/255f, 245f/255f);
+            imageOfTimer.sprite = Game.timerLibrary[0]; 
         }
     }
 
@@ -33,11 +33,11 @@ public class FlipTimer : Timer
         foreach (Player p in instance.playersList){ 
             if(p.trash.Count != 0){
                 if(p.trash[p.trash.Count - 1].shape.name == "dex"){
-                    instance.colorMode = true;
+                    Game.colorMode = true;
                     return;
                 }
             }
         }
-        instance.colorMode = false;
+        Game.colorMode = false;
     }
 }

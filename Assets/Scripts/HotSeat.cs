@@ -16,7 +16,8 @@ public class HotSeat : Game{
 
     public Player p4;
     
-    void Start(){
+    public override void onStart(){
+
 
         Screen.autorotateToPortrait = false;
         playersList = new List<Player>();

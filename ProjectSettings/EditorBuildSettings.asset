@@ -13,13 +13,16 @@ EditorBuildSettings:
     guid: 4da666f15f4644ef09eca18f77ab3301
   - enabled: 1
     path: Assets/Scenes/Singleplayer.unity
-    guid: b1bcc7a820c05447d81a0ff3c47fdb47
-  - enabled: 1
-    path: Assets/Scenes/Multiplayer.unity
-    guid: 6396c9c103a88486ab4fea24677a8c9e
+    guid: 0c437219a9729451e87cab08b3293be3
   - enabled: 1
     path: Assets/Scenes/Settings.unity
-    guid: f207d797f496c4b0fa8cdc869b2ea0c5
+    guid: 8c10c8368961a4cbe845b488621317c3
+  - enabled: 1
+    path: Assets/Scenes/Multiplayer.unity
+    guid: 5754e9d34d53a47fdae7e84be6105cce
+  - enabled: 1
+    path: Assets/Scenes/SingleplayerGameScene.unity
+    guid: b32efdd1588c042a9bbbcc97bf141386
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: e63c55ed2932c48afa930406efeb77e1, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: e256b70bc935e412483016c46e70774f, type: 2}

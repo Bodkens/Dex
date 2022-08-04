@@ -50,7 +50,7 @@ public class Player: MonoBehaviour{
         System.Random random = new System.Random();
         for(int i = 0; i < Game.cards; i++){
             
-            figures.Add(new Figure(instance.shapeLibrary[random.Next(0, instance.shapeLibrary.Length)], instance.colorLibrary[random.Next(0, instance.colorLibrary.Length)]));
+            figures.Add(new Figure(Game.shapeLibrary[random.Next(0, Game.shapeLibrary.Length)], Game.colorLibrary[random.Next(0, Game.colorLibrary.Length)]));
             if(figures[i].shape.name == "dex" ){
                 figures[i].color = Color.white;
             }
@@ -108,19 +108,7 @@ public class Player: MonoBehaviour{
         instance.playersList.Remove(this);
         List<Player> compareList = new List<Player>();
         foreach (Player p in instance.playersList){
-            if(this.Compare(p, instance.colorMode)){
-                // p.trash.AddRange(this.trash);
-                // p.trash.Add(this.figures[0]);
-                // this.figures.RemoveAt(0);
-                // this.trash.Clear();
-                // foreach(Player _p in instance.playersList){
-                //     _p.Flip();
-                // }
-                // this.Refresh();
-                // instance.RefreshAll();
-                // timer.RestartTimer();
-                // instance.playersList.Add(this);
-                // return;
+            if(this.Compare(p, Game.colorMode)){
                 compareList.Add(p);
             }
         }
@@ -157,7 +145,7 @@ public class Player: MonoBehaviour{
                 logTimer.Log(this.playerName + " mistaken and gets 10 cards!");
                 for (int i = 0; i < 10; i++)
                 {
-                    newFigs.Add(new Figure(instance.shapeLibrary[rnd.Next(0, instance.shapeLibrary.Length)], instance.colorLibrary[rnd.Next(0, instance.colorLibrary.Length)]));
+                    newFigs.Add(new Figure(Game.shapeLibrary[rnd.Next(0, Game.shapeLibrary.Length)], Game.colorLibrary[rnd.Next(0, Game.colorLibrary.Length)]));
                     if (newFigs[i].shape.name == "dex")
                     {
                         newFigs[i].color = Color.white;
