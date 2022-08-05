@@ -10,7 +10,13 @@ public class GameStarter : MonoBehaviour
 
     public GameObject cardsSlider;
     public void SetGameProperties(){
-        Game.players = (int) playerSlider.GetComponent<Slider>().value;
-        Game.cards = (int) cardsSlider.GetComponent<Slider>().value;
+        if(this.playerSlider != null){
+            Game.players = (int) playerSlider.GetComponent<Slider>().value;
+        }
+        if(this.cardsSlider != null){
+            Game.cards = (int) cardsSlider.GetComponent<Slider>().value;
+        }
+        
+        
     }
 }
