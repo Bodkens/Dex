@@ -7,4 +7,5 @@ Platforms: iOS, Android
 Modes: Singleplayer, Hot-Seat
 
 
-![RPReplay_Final1659627171](https://user-images.githubusercontent.com/59771705/182888688-6f0733cd-d058-4d4d-811e-7e8d64d94065.gif)
+
+![Запись экрана 2022-08-05 в 23 39 01](https://user-images.githubusercontent.com/59771705/183214205-769c92a2-5fa8-4174-b455-5f78d2639263.gif)
