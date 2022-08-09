@@ -1,8 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class Timer : MonoBehaviour
-{
+public class Timer : MonoBehaviour {
 
     public float time;
 
@@ -11,55 +10,52 @@ public class Timer : MonoBehaviour
     public float startTime;
 
     public bool countdownTimer;
-    void Start(){
-        if(countdownTimer){
+    void Start() {
+        if (countdownTimer) {
             startTime = time;
-        }
-        else{
+        } else {
             startTime = 0;
         }
         onStart();
     }
 
-    public void FixedUpdate(){
-        if(timerEnabled){
-            if(countdownTimer){
+    public void FixedUpdate() {
+        if (timerEnabled) {
+            if (countdownTimer) {
 
                 startTime -= Time.fixedDeltaTime;
-            }
-            else{
+            } else {
                 startTime += Time.fixedDeltaTime;
             }
             onUpdate();
-            if(startTime >= time || startTime <= 0){
+            if (startTime >= time || startTime <= 0) {
                 onTick();
             }
-        } 
-    }
-    public void RestartTimer(){
-        if(countdownTimer){
-            this.startTime = time;
         }
-        else{
+    }
+    public void RestartTimer() {
+        if (countdownTimer) {
+            this.startTime = time;
+        } else {
             this.startTime = 0;
         }
         onRestart();
     }
 
-    public virtual void onUpdate(){
+    public virtual void onUpdate() {
 
     }
 
-    public virtual void onRestart(){
+    public virtual void onRestart() {
 
     }
 
-    public virtual void onTick(){
-        
+    public virtual void onTick() {
+
     }
 
-    public virtual void onStart(){
-        
+    public virtual void onStart() {
+
     }
 
 

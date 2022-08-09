@@ -780,8 +780,8 @@ MonoBehaviour:
   playersList: []
   winPanel: {fileID: 1270007442}
   winText: {fileID: 323926199}
-  player: {fileID: 1409920783}
-  bot: {fileID: 0}
+  player: {fileID: 1409920785}
+  bot: {fileID: 1345768794}
 --- !u!1 &532962394
 GameObject:
   m_ObjectHideFlags: 0
@@ -3467,6 +3467,7 @@ GameObject:
   - component: {fileID: 1345768791}
   - component: {fileID: 1345768793}
   - component: {fileID: 1345768792}
+  - component: {fileID: 1345768794}
   m_Layer: 5
   m_Name: BotCardBackground
   m_TagString: Untagged
@@ -3537,6 +3538,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1345768790}
   m_CullTransparentMesh: 1
+--- !u!114 &1345768794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345768790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 926dad0e19dce4707a57a051699a67cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectOfPlayer: {fileID: 1345768790}
+  imageOfFigure: {fileID: 738523569}
+  textOfFigures: {fileID: 1680263851}
+  textOfTrash: {fileID: 454729547}
+  playerName: Bot
+  instance: {fileID: 519420033}
+  timer: {fileID: 1014649033}
+  logTimer: {fileID: 2042291410}
 --- !u!1 &1402153900
 GameObject:
   m_ObjectHideFlags: 0

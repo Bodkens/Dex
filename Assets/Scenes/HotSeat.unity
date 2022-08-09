@@ -975,9 +975,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allowVertical: 1
   menuHorizontal: {fileID: 1232677489}
-  cordLib: []
   menuVertical: {fileID: 1637358773}
-  logoVertical: {fileID: 1455568800}
 --- !u!1 &557098696
 GameObject:
   m_ObjectHideFlags: 0
