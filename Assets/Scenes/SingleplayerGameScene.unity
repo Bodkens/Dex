@@ -781,7 +781,7 @@ MonoBehaviour:
   winPanel: {fileID: 1270007442}
   winText: {fileID: 323926199}
   player: {fileID: 1409920785}
-  bot: {fileID: 1345768794}
+  bot: {fileID: 0}
 --- !u!1 &532962394
 GameObject:
   m_ObjectHideFlags: 0
@@ -3547,7 +3547,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1345768790}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 926dad0e19dce4707a57a051699a67cf, type: 3}
+  m_Script: {fileID: 11500000, guid: 3dd278176f4ba457abac7fd8b177939d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   objectOfPlayer: {fileID: 1345768790}
