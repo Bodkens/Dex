@@ -4,7 +4,7 @@ Dex! - a dexterity based mobile Unity 2D Game
 
 Platforms: iOS, Android
 
-Modes: Singleplayer(under construction), Hot-Seat(ready), Multiplayer(planned)
+Modes: Singleplayer(almost done), Hot-Seat(ready), Multiplayer(planned)
 
 
 
