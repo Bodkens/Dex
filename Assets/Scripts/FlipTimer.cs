@@ -7,12 +7,14 @@ public class FlipTimer : Timer {
     public Game instance;
     public Image imageOfTimer;
 
+
+
     public override void onRestart() {
         imageOfTimer.fillAmount = 0;
     }
-
     public override void onUpdate() {
         imageOfTimer.fillAmount = startTime / time;
+
         if (Game.colorMode) {
             imageOfTimer.color = Color.white;
             imageOfTimer.sprite = Game.timerLibrary[1];
@@ -26,6 +28,7 @@ public class FlipTimer : Timer {
         instance.FlipAll();
         CheckColorMode();
         RestartTimer();
+
     }
     public void CheckColorMode() {
         foreach (Player p in instance.playersList) {
@@ -36,6 +39,7 @@ public class FlipTimer : Timer {
                 }
             }
         }
+
         Game.colorMode = false;
     }
 }

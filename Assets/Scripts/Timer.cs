@@ -10,6 +10,7 @@ public class Timer : MonoBehaviour {
     public float startTime;
 
     public bool countdownTimer;
+
     void Start() {
         if (countdownTimer) {
             startTime = time;
@@ -20,6 +21,9 @@ public class Timer : MonoBehaviour {
     }
 
     public void FixedUpdate() {
+
+
+
         if (timerEnabled) {
             if (countdownTimer) {
 
@@ -32,7 +36,10 @@ public class Timer : MonoBehaviour {
                 onTick();
             }
         }
+
     }
+
+
     public void RestartTimer() {
         if (countdownTimer) {
             this.startTime = time;

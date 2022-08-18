@@ -13,6 +13,8 @@ public class Game : MonoBehaviour {
 
     public List<Player> playersList;
 
+    public static bool gameStarted = false;
+
     public static bool colorMode;
 
     public static int players = 2;
@@ -22,8 +24,6 @@ public class Game : MonoBehaviour {
     public GameObject winText;
 
     public static int cards = 35;
-
-
 
     public void Start() {
 

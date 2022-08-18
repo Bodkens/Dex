@@ -10,9 +10,12 @@ public class Singleplayer : Game {
         Screen.autorotateToPortrait = true;
         player.Create();
         bot.Create();
-        playersList.Add(player);
         playersList.Add(bot);
-        bot.AddRivals(playersList);
+        playersList.Add(player);
+    }
+
+    void FixedUpdate() {
+
     }
 
 }

@@ -84,7 +84,6 @@ public class Player : MonoBehaviour {
         return false;
     }
 
-
     private List<Figure> MixList(List<Figure> list) {
 
         System.Random random = new System.Random();
@@ -103,7 +102,7 @@ public class Player : MonoBehaviour {
     }
 
 
-    public void CompareAll() {
+    public virtual void CompareAll() {
 
         instance.playersList.Remove(this);
         List<Player> compareList = new List<Player>();
@@ -112,7 +111,6 @@ public class Player : MonoBehaviour {
                 compareList.Add(p);
             }
         }
-
         if (compareList.Count > 0) {
             int part = trash.Count / compareList.Count;
             System.Random rnd = new System.Random();

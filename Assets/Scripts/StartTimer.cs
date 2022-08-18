@@ -20,10 +20,10 @@ public class StartTimer : Timer {
         timerEnabled = false;
         GameObject.Find("StartTimerPanel").SetActive(false);
         pauseButton.SetActive(true);
+        Game.gameStarted = true;
     }
     public override void onStart() {
         textOfTimer.text = time.ToString("n0");
     }
-
 
 }

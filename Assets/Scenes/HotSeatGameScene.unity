@@ -4160,6 +4160,7 @@ MonoBehaviour:
   timerEnabled: 0
   startTime: 0
   countdownTimer: 0
+  pauseImmuneTimer: 0
   instance: {fileID: 519420033}
   imageOfTimer: {fileID: 1014649031}
 --- !u!1 &1039746643
@@ -6154,6 +6155,7 @@ MonoBehaviour:
   timerEnabled: 1
   startTime: 0
   countdownTimer: 1
+  pauseImmuneTimer: 1
   pauseButton: {fileID: 848289729}
   textOfTimer: {fileID: 1039746645}
   FlipTimer: {fileID: 1014649033}
@@ -6733,6 +6735,7 @@ MonoBehaviour:
   timerEnabled: 0
   startTime: 0
   countdownTimer: 0
+  pauseImmuneTimer: 0
   logText: {fileID: 2042291406}
 --- !u!1 &2046847970
 GameObject:
