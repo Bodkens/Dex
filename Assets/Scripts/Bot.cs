@@ -6,6 +6,8 @@ public class Bot : Player {
 
 
     private float safeZone = 0.25f;
+
+    private static float chance = 0.04f;
     void FixedUpdate() {
 
 
@@ -23,8 +25,8 @@ public class Bot : Player {
             if (compareList.Count > 0) {
                 safeZone -= Time.fixedDeltaTime;
                 System.Random rnd = new System.Random();
-                float chance = 0.04f;
-                if (rnd.NextDouble() <= chance && safeZone <= 0) {
+
+                if (rnd.NextDouble() <= Bot.chance && safeZone <= 0) {
                     safeZone = 0.25f;
                     CompareAll();
                 }
