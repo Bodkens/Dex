@@ -5,8 +5,9 @@ using UnityEngine;
 public class Bot : Player {
 
 
-
+    private float safeZone = 0.25f;
     void FixedUpdate() {
+
 
         if (Game.gameStarted) {
             List<Player> players = new List<Player>();
@@ -20,10 +21,11 @@ public class Bot : Player {
             }
             players.Add(this);
             if (compareList.Count > 0) {
+                safeZone -= Time.fixedDeltaTime;
                 System.Random rnd = new System.Random();
-
-                float chance = 0.015f;
-                if (rnd.NextDouble() <= chance) {
+                float chance = 0.04f;
+                if (rnd.NextDouble() <= chance && safeZone <= 0) {
+                    safeZone = 0.25f;
                     CompareAll();
                 }
 

@@ -2549,7 +2549,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5182c03f1811840619315b93dc05cbf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 3
+  time: 2
   timerEnabled: 0
   startTime: 0
   countdownTimer: 0

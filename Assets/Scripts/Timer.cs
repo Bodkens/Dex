@@ -11,6 +11,8 @@ public class Timer : MonoBehaviour {
 
     public bool countdownTimer;
 
+
+
     void Start() {
         if (countdownTimer) {
             startTime = time;
@@ -19,10 +21,7 @@ public class Timer : MonoBehaviour {
         }
         onStart();
     }
-
     public void FixedUpdate() {
-
-
 
         if (timerEnabled) {
             if (countdownTimer) {

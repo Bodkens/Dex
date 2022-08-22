@@ -26,4 +26,6 @@ public class StartTimer : Timer {
         textOfTimer.text = time.ToString("n0");
     }
 
+
+
 }
