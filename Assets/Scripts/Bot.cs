@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Bot : Player {
 
+
+
     void FixedUpdate() {
 
         if (Game.gameStarted) {
@@ -19,7 +21,8 @@ public class Bot : Player {
             players.Add(this);
             if (compareList.Count > 0) {
                 System.Random rnd = new System.Random();
-                float chance = 0.0085f;
+
+                float chance = 0.015f;
                 if (rnd.NextDouble() <= chance) {
                     CompareAll();
                 }

@@ -5,8 +5,8 @@ using UnityEngine;
 using TMPro;
 public class Game : MonoBehaviour {
 
-    public static Color[] colorLibrary = { new Color(250f / 255f, 246f / 255f, 84f / 255f), new Color(250f / 255f, 84f / 255f, 198f / 255f), new Color(90f / 255f, 250f / 255f, 84f / 255f), new Color(84f / 255f, 190f / 255f, 250f / 255f), new Color(212f / 255f, 51f / 255f, 19f / 255f) };
-
+    public static Color[] colorLibrary = { new Color(250f / 255f, 246f / 255f, 84f / 255f), new Color(90f / 255f, 250f / 255f, 84f / 255f), new Color(84f / 255f, 190f / 255f, 250f / 255f), new Color(212f / 255f, 51f / 255f, 19f / 255f) };
+    //                                                          yellow                                          green                                                   blue                                    red                                                               
     public static Sprite[] shapeLibrary;
 
     public static Sprite[] timerLibrary;

@@ -7,15 +7,12 @@ public class Singleplayer : Game {
 
     public Bot bot;
     public override void onStart() {
+
         Screen.autorotateToPortrait = true;
         player.Create();
         bot.Create();
         playersList.Add(bot);
         playersList.Add(player);
+        Game.gameStarted = false;
     }
-
-    void FixedUpdate() {
-
-    }
-
 }

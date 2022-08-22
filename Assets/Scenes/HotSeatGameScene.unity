@@ -626,7 +626,7 @@ MonoBehaviour:
   m_text: Player  1 won!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ce61edeab209a42278ecd20ee1c86040, type: 2}
-  m_sharedMaterial: {fileID: 6030902696901663193, guid: 11599cf3f7e6746eeac102dd76927f6b, type: 2}
+  m_sharedMaterial: {fileID: 5368483099765333319, guid: ce61edeab209a42278ecd20ee1c86040, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -650,14 +650,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 74.9
+  m_fontSize: 58.35
   m_fontSizeBase: 0
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 200
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -3033,7 +3033,7 @@ MonoBehaviour:
   m_text: Retry
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ce61edeab209a42278ecd20ee1c86040, type: 2}
-  m_sharedMaterial: {fileID: -545880054324171128, guid: 168daf66780a942c29b0e1a0d2eb1a29, type: 2}
+  m_sharedMaterial: {fileID: 5368483099765333319, guid: ce61edeab209a42278ecd20ee1c86040, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4160,7 +4160,6 @@ MonoBehaviour:
   timerEnabled: 0
   startTime: 0
   countdownTimer: 0
-  pauseImmuneTimer: 0
   instance: {fileID: 519420033}
   imageOfTimer: {fileID: 1014649031}
 --- !u!1 &1039746643
@@ -4255,7 +4254,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 100
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -4868,7 +4867,7 @@ MonoBehaviour:
   m_text: Menu
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ce61edeab209a42278ecd20ee1c86040, type: 2}
-  m_sharedMaterial: {fileID: -545880054324171128, guid: 168daf66780a942c29b0e1a0d2eb1a29, type: 2}
+  m_sharedMaterial: {fileID: 5368483099765333319, guid: ce61edeab209a42278ecd20ee1c86040, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6155,7 +6154,6 @@ MonoBehaviour:
   timerEnabled: 1
   startTime: 0
   countdownTimer: 1
-  pauseImmuneTimer: 1
   pauseButton: {fileID: 848289729}
   textOfTimer: {fileID: 1039746645}
   FlipTimer: {fileID: 1014649033}
@@ -6735,7 +6733,6 @@ MonoBehaviour:
   timerEnabled: 0
   startTime: 0
   countdownTimer: 0
-  pauseImmuneTimer: 0
   logText: {fileID: 2042291406}
 --- !u!1 &2046847970
 GameObject:
