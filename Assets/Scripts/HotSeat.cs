@@ -16,6 +16,7 @@ public class HotSeat : Game {
 
 
         Screen.autorotateToPortrait = false;
+        Screen.autorotateToPortraitUpsideDown = false;
         Game.gameStarted = true;
         playersList = new List<Player>();
         p1.Create();

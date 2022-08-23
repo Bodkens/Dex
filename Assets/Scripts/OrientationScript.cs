@@ -12,10 +12,12 @@ public class OrientationScript : MonoBehaviour {
     void Start() {
         if (!allowVertical) {
             Screen.autorotateToPortrait = false;
+            Screen.autorotateToPortraitUpsideDown = false;
             menuVertical.SetActive(false);
             menuHorizontal.SetActive(true);
         } else {
             Screen.autorotateToPortrait = true;
+            Screen.autorotateToPortraitUpsideDown = true;
             menuHorizontal.SetActive(false);
             menuVertical.SetActive(true);
         }
