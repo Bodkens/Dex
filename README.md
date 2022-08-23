@@ -8,4 +8,4 @@ Modes: Singleplayer(ready), Hot-Seat(ready), Multiplayer(planned)
 
 
 
-![Запись экрана 2022-08-05 в 23 39 01](https://user-images.githubusercontent.com/59771705/183214205-769c92a2-5fa8-4174-b455-5f78d2639263.gif)
+![Запись экрана 2022-08-23 в 23 36 27-2](https://user-images.githubusercontent.com/59771705/186272401-5f8b706a-f0c6-4e44-9a25-02fa2b90e7f8.gif)
