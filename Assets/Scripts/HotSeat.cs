@@ -5,11 +5,8 @@ using TMPro;
 public class HotSeat : Game {
 
     public Player p1;
-
     public Player p2;
-
     public Player p3;
-
     public Player p4;
 
     public override void onStart() {
@@ -43,6 +40,5 @@ public class HotSeat : Game {
                 p4.objectOfPlayer.SetActive(true);
                 break;
         }
-
     }
 }

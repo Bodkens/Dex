@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bot : Player {
 
 
-    private float safeZone = 0.25f;
+    private float safeZone = 0.35f;
 
     private static float chance = 0.04f;
     void FixedUpdate() {
