@@ -13,5 +13,4 @@ public class Figure {
         this.shape = s;
         this.color = c;
     }
-    
 }

@@ -21,6 +21,7 @@ public class Bot : Player {
                     compareList.Add(p);
                 }
             }
+            
             players.Add(this);
             if (compareList.Count > 0) {
                 safeZone -= Time.fixedDeltaTime;
