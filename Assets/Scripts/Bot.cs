@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bot : Player {
 
 
-    private float safeZone = 0.35f;
+    private static float safeZone = 0.35f;
 
     private static float chance = 0.04f;
     void FixedUpdate() {
@@ -21,7 +21,7 @@ public class Bot : Player {
                     compareList.Add(p);
                 }
             }
-            
+
             players.Add(this);
             if (compareList.Count > 0) {
                 safeZone -= Time.fixedDeltaTime;
@@ -31,7 +31,6 @@ public class Bot : Player {
                     safeZone = 0.25f;
                     CompareAll();
                 }
-
             }
         }
     }

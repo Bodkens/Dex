@@ -17,6 +17,8 @@ public class Game : MonoBehaviour {
 
     public static bool colorMode;
 
+
+
     public static int players = 2;
 
     public GameObject winPanel;
@@ -25,8 +27,10 @@ public class Game : MonoBehaviour {
 
     public static int cards = 35;
 
-    public void Start() {
+    public static bool tutorialPassed;
 
+    public void Start() {
+        //Game.gameStarted = JsonUtility.FromJson("Data.json", bool);
         shapeLibrary = Resources.LoadAll<Sprite>("Figures");
         timerLibrary = Resources.LoadAll<Sprite>("Timers");
         onStart();
@@ -51,6 +55,4 @@ public class Game : MonoBehaviour {
             p.Refresh();
         }
     }
-
-
 }
